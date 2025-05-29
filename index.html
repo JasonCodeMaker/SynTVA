@@ -52,21 +52,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Are Synthetic Videos Useful? A Benchmark for Retrieval-Centric
+Evaluation of Synthetic Videos</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zecheng Zha</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Selena Song</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tong Chen</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhi Chen</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shazia Sadiq</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yadan Luo</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">The Univerity of Queensland<br>ACM Multimedia Dataset Track 2025 Submission</span>
+              
                   </div>
 
                   <div class="column has-text-centered">
@@ -98,9 +108,9 @@
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fas fa-database"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Dataset</span>
                   </a>
                 </span>
 
@@ -127,13 +137,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="asset/Architecture.png" alt="Architecture Diagram" width="100%">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Overview of the SynTVA pipeline and its application. 
       </h2>
     </div>
   </div>
@@ -148,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Text-to-video (T2V) synthesis has advanced rapidly, yet current evaluation metrics primarily capture visual quality and prompt fidelity, offering limited insight into how synthetic videos perform in downstream tasks such as text-to-video retrieval (TVR). In this work, we introduce SynTVA, a new dataset and benchmark designed to evaluate the utility of synthetic videos for retrieval scenarios. Based on 800 diverse user queries derived from MSRVTT metadata, we generate synthetic videos using state-of-the-art T2V models and annotate each video-text pair along four key semantic alignment dimensions: Object & Scene, Action, Attribute, and Prompt Fidelity. Our evaluation framework correlates general video quality assessment (VQA) metrics with these alignment scores and examines their predictive power for downstream TVR performance. We further develop an Auto-Evaluator to estimate alignment quality from existing metrics. Beyond benchmarking, our results show that SynTVA is a valuable asset for dataset augmentation, enabling the selection of high-utility synthetic samples that measurably improve TVR outcomes.  
           </p>
         </div>
       </div>
@@ -157,128 +163,528 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section">
+  <div class="container">
+    <!-- Advertisement -->
+    <p class="title is-4">Advertisement</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Sleek robot showcasing innovative features in a high-tech showroom setting.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Advertisement_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Advertisement_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Advertisement_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <!-- Animal -->
+    <p class="title is-4">Animal</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Fluffy puppy playing fetch with owner in the sunny backyard.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Animal_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Animal_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Animal_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Cooking -->
+    <p class="title is-4">Cooking</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Chef chopping vegetables on a cutting board with a sharp knife.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Cooking_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Cooking_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Cooking_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Documentary -->
+    <p class="title is-4">Documentary</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Hillary Clinton delivers presidential speech at a large campaign event stage.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Documentary_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Documentary_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Documentary_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <p class="title is-4">Education</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Instructor explains step-by-step math problem in a classroom setting.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Education_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Education_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Education_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Family -->
+    <p class="title is-4">Family</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Young girl singing live on stage with a bright spotlight.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Family_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Family_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Family_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Fashion -->
+    <p class="title is-4">Fashion</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Models showcasing diverse clothing styles on a shiny black runway stage.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Fashion_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Fashion_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Fashion_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <p class="title is-4">Food</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Chef chopping fresh vegetables in a steaming kitchen setting.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Food_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Food_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Food_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Gaming -->
+    <p class="title is-4">Gaming</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Live gamer reacting to unexpected plot twist on game screen.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Gaming_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Gaming_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Gaming_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- How-to -->
+    <p class="title is-4">How-to</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> How to fold a detailed origami star on a classroom desk.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/How-to_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/How-to_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/How-to_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Movies -->
+    <p class="title is-4">Movies</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Actor discussing latest film in a studio with formal attire.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Movies_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Movies_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Movies_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Music -->
+    <p class="title is-4">Music</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Watch the band performing live on a crowded concert stage with bright lights.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Music_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Music_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Music_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- People -->
+    <p class="title is-4">People</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Smartphone review in a studio with detailed camera feature demonstration.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/People_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/People_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/People_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Politics -->
+    <p class="title is-4">Politics</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Formal debate on a television set with politicians discussing policies.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Politics_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Politics_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Politics_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Shows -->
+    <p class="title is-4">Shows</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Host interviewing celebrity guest on live talk show set with bright lights.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Shows_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Shows_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Shows_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Sports -->
+    <p class="title is-4">Sports</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Fast-paced soccer player dribbling past defenders on a crowded field.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Sports_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Sports_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Sports_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Technology -->
+    <p class="title is-4">Technology</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Colorful chemicals bubbling in a laboratory beaker during a science demonstration.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Technology_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Technology_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Technology_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Travel -->
+    <p class="title is-4">Travel</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Motorcycle weaving through crowded city street during nighttime rush hour.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Travel_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Travel_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Travel_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
+    </div>
+
+    <!-- Vehicles -->
+    <p class="title is-4">Vehicles</p>
+    <p><i class="fas fa-file-alt"></i> <strong>Text Prompt:</strong> Review of Audi's smooth drive on a scenic country road.</p>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Vehicles_Cosmos_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Cosmos</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Vehicles_Mochi_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Mochi</strong></p>
+      </div>
+      <div class="column is-one-third">
+        <video controls>
+          <source src="asset/Vehicles_Wan2.1_video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="has-text-centered"><strong>Wan2.1</strong></p>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>Will be updated soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,7 +697,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
@@ -307,6 +713,8 @@
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
+
+
 
   </body>
   </html>
